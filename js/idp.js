@@ -25,7 +25,3 @@ $(document).ready(function () {
 // 	  api.next();
 // 	}, $(this).attr('timeout'));
 // });
-
-$('#group').on('impress:stepenter', function () {
-	$(this).find('img').animateCss('tada');
-});
