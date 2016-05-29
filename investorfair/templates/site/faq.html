@@ -1,0 +1,37 @@
+{% extends "site/base.html" %}
+{% load staticfiles %}
+
+{% block title %}FAQ{% endblock %}
+
+{% block main %}
+		<main>
+			<div class="no-pad-bot section" id="index-banner">
+				<div class="container">
+					<h2 class="header center primary-text">FAQ</h2>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="section">
+          <ul class="collapsible" data-collapsible="accordion">
+            <li>
+              <div class="collapsible-header light-primary"><i class="material-icons">train</i>The Hyperloop doesn't exist yet!</div>
+              <div class="collapsible-body"><p>It actually does! <a href="http://www.spacex.com/hyperloop" target="_blank">SpaceX</a> is actually running tests to try to create a feasible product. Zero Industries is planning on collaborating with SpaceX to make one of their test models operational!</p></div>
+            </li>
+            <li>
+              <div class="collapsible-header light-primary"><i class="material-icons">account_circle</i>Who is Bon?</div>
+              <div class="collapsible-body"><p>Bon is our mascot! If any attractions are named after Bon, we are planning on naming them after our investors! To contribute the our project and get something named after you, please <a href="/website/visit">visit</a> us during our school's Investor Fair!</p></div>
+            </li>
+            <li>
+              <div class="collapsible-header light-primary"><i class="material-icons">face</i>Is there an age limit?</div>
+              <div class="collapsible-body"><p>Absolutely not! Zero prides itself in being inclusive towards the whole family!</p></div>
+            </li>
+            <li>
+              <div class="collapsible-header light-primary"><i class="material-icons">location_on</i>Where will the park be located?</div>
+              <div class="collapsible-body"><p>The plan is to purchase land in Nipton, California to build our park. Nipton is a small city around 10 miles off the 15 freeway near State Line.</p></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+		</main>
+{% endblock %}

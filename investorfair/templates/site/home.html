@@ -1,0 +1,44 @@
+{% extends "site/base.html" %}
+{% load staticfiles %}
+
+{% block title %}Home{% endblock %}
+
+{% block css %}
+<link type="text/css" rel="stylesheet" href="{% static 'site/css/home.css' %}" />
+{% endblock %}
+
+{% block main %}
+		<main>
+			<div class="no-pad-bot section" id="index-banner">
+				<div class="container">
+					<h1 class="header center animated pulse infinite primary-text">Zero Industries</h1>
+					<div class="row">
+						<h5 class="center accent-text"><span class="typed"></span></h5>
+						<h5 class="array center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h5>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="section">
+					<div class="row">
+						<div class="col s12 m6 center">
+							<i class="material-icons medium accent-text">supervisor_account</i>
+							<h5 class="header center light">Fun for the whole family!</h5>
+							<p>With attractions ranging from the "Hot Tires" to "Blast Off," every member of the family will be well entertained!</p>
+						</div>
+						<div class="col s12 m6 center">
+							<i class="material-icons medium accent-text">location_on</i>
+							<h5 class="header center light">A Convienent Location</h5>
+							<p>Located about 10 miles off the 15 freeway near State Line, Zero is a prime place for the family to take a break between Las Vegas and Los Angeles!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+{% endblock %}
+
+{% block js %}
+<script src="{% static 'site/js/typed.js' %}"></script>
+<script src="{% static 'site/js/home.js' %}"></script>
+{% endblock %}

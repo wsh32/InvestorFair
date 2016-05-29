@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	{% load staticfiles %}
+  <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=1024" />
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+      <title>Zero Industries</title>
+
+      <meta name="description" content="Have the ride of your life!" />
+      <meta name="author" content="Wesley Soo-Hoo" />
+
+    	<link rel="icon" type="image/png" href="{% static 'display/img/favicon-192x192.png' %}" sizes="192x192">
+    	<link rel="icon" type="image/png" href="{% static 'display/img/favicon-160x160.png' %}" sizes="160x160">
+    	<link rel="icon" type="image/png" href="{% static 'display/img/favicon-96x96.png' %}" sizes="96x96">
+    	<link rel="icon" type="image/png" href="{% static 'display/img/favicon-32x32.png' %}" sizes="32x32">
+    	<link rel="icon" type="image/png" href="{% static 'display/img/favicon-16x16.png' %}" sizes="16x16">
+
+      <link href="{% static 'display/css/animate.css' %}" rel="stylesheet" />
+      <link href="{% static 'display/css/style.css' %}" rel="stylesheet" />
+      <link href="{% static 'display/css/materialize.css' %}" rel="stylesheet" />
+      <link href="{% static 'display/css/palette.css' %}" rel="stylesheet" />
+  </head>
+
+  <body class="impress-not-supported">
+
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this display.</p>
+        <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+    </div>
+
+    {% block main %}{% endblock %}
+
+    <script src="{% static 'display/js/jquery-2.2.3.min.js' %}"></script>
+    <script src="{% static 'display/js/materialize.js' %}"></script>
+    <script src="{% static 'display/js/impress.js' %}"></script>
+    <script src="{% static 'display/js/idp.js' %}"></script>
+    {% block js %}{% endblock %}
+  </body>
+</html>

@@ -1,0 +1,31 @@
+{% extends "site/base.html" %}
+{% load staticfiles %}
+
+{% block title %}Portal{% endblock %}
+
+{% block main %}
+		<main>
+			<div class="no-pad-bot section" id="index-banner">
+				<div class="container">
+					<h1 class="header center animated pulse infinite primary-text">Zero Industries</h1>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="section">
+					<div class="row">
+						<div class="col s12 m6 center">
+							<i class="material-icons medium accent-text">star</i>
+							<h5 class="header center light">View the website!</h5>
+							<a class="waves-effect waves-light btn dark-primary" href="/site/">GO!</a>
+						</div>
+						<div class="col s12 m6 center">
+							<i class="material-icons medium accent-text">star</i>
+							<h5 class="header center light">View the commercial!</h5>
+							<a class="waves-effect waves-light btn dark-primary" href="/commercial/">GO!</a>
+            </div>
+					</div>
+				</div>
+			</div>
+		</main>
+{% endblock %}

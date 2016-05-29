@@ -1,0 +1,35 @@
+{% extends "site/base.html" %}
+{% load staticfiles %}
+
+{% block title %}Resources{% endblock %}
+
+{% block main %}
+		<main>
+			<div class="no-pad-bot section" id="index-banner">
+				<div class="container">
+					<h2 class="header center primary-text">Resources</h2>
+				</div>
+			</div>
+
+			<div class="container">
+        <div class="section">
+          <div class="row">
+            <div class="col s12 m6">
+              <div class="card-panel light-primary">
+                <span class="card-title accent-text"><b>Park Map</b></span>
+                <p>Get a preview of our park!<br><br>
+								<a href="{% static 'site/resources/map.pdf' %}" target="_blank" class="primary-text">Preview</a> | <a href="{% static 'site/resources/map.pdf' %}" class="primary-text" download>Download</a></p>
+              </div>
+            </div>
+            <div class="col s12 m6">
+              <div class="card-panel light-primary">
+                <span class="card-title accent-text"><b>About Zero</b></span>
+								<p>See our Mission and Vision Statements!<br><br>
+								<a href="{% static 'site/resources/about.pdf' %}" target="_blank" class="primary-text">Preview</a> | <a href="{% static 'site/resources/about.pdf' %}" class="primary-text" download>Download</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+		</main>
+{% endblock %}

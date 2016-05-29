@@ -1,0 +1,9 @@
+.dark-primary    { background-color: #303F9F !important; }
+.primary { background-color: #3F51B5 !important; }
+.light-primary   { background-color: #C5CAE9 !important; }
+.text-primary    { color: #FFFFFF !important; }
+.accent          { background-color: #FF4081 !important; }
+.primary-text    { color: #3F51B5 !important; }
+.secondary-text  { color: #3F51B5 !important; }
+.accent-text  { color: #FF4081 !important; }
+.divider         { border-color: #B6B6B6 !important; }

@@ -1,0 +1,75 @@
+{% extends "site/base.html" %}
+{% load staticfiles %}
+
+{% block title %}Attractions{% endblock %}
+
+{% block main %}
+		<main>
+			<div class="no-pad-bot section" id="index-banner">
+				<div class="container">
+					<h2 class="header center primary-text">Attractions</h2>
+          <div class="row center">
+						<h5 class="header col s12 light">Get a preview of the park!</h5>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="section">
+					<div class="row center">
+						<h4 class="col s12 primary-text">Map</h4>
+						<a href="{% static 'site/resources/map.pdf' %}" download>Download</a>
+					</div>
+					<div class="row">
+						<iframe src="https://drive.google.com/file/d/0B715jQ3aCFC4ekY5N1NxTmgzWUE/preview" width="100%" height="480"></iframe>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="section">
+					<div class="row center">
+						<h4 class="col s12 primary-text">Main Attractions</h4>
+					</div>
+					<div class="row">
+						<div class="col m6 s12">
+							<div class="card small">
+								<div class="card-image waves-effect waves-block waves-light">
+									<img class="activator" src="{% static 'img/blastoff.png' %}">
+								</div>
+								<div class="card-content">
+									<span class="card-title activator primary-text"><b>Blast Off!</b><i class="material-icons right">more_vert</i></span>
+									<p>Expand to see more!<br></p>
+								</div>
+								<div class="card-reveal">
+									<span class="card-title primary-text"><b>Blast Off!</b><i class="material-icons right">close</i></span>
+									<p>
+										Embark on a trip to space, including a true zero-gravity experience! Blastoff simulates a ride into space, as it rockets up to its 300 foot high apex. As it nears its peak, the roller coaster decelerates to simulate zero gravity. However, soon after the apex is reached, the trip takes a turn for the worse, as it plummets down towards earth. After many twists and turns, the spaceship finally crash-lands into water, and the crew is safely rescued.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col m6 s12">
+							<div class="card small">
+								<div class="card-image waves-effect waves-block waves-light">
+									<img class="activator" src="{% static 'img/hyperloop.png' %}">
+								</div>
+								<div class="card-content">
+									<span class="card-title activator primary-text"><b>The Hyperloop</b><i class="material-icons right">more_vert</i></span>
+									<p>Expand to see more!<br></p>
+								</div>
+								<div class="card-reveal">
+									<span class="card-title primary-text"><b>The Hyperloop</b><i class="material-icons right">close</i></span>
+									<p>
+										An innovative method of transporation, the Hyperloop provides its passengers with a ride to and from Las Vegas. Reaching speeds up to 400 mph, the Hyperloop is able to make the 60 mile journey in 15 minutes, before slowing down and making a loop around the park, giving the passengers a preview of the park.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</main>
+{% endblock %}
