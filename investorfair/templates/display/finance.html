@@ -1,0 +1,16 @@
+{% extends "display/base.html" %}
+{% load staticfiles %}
+
+{% block main %}
+
+  <div id="impress">
+    <div id="title" class="step center" data-x="0" data-y="0" timeout="5000">
+      <div class="container">
+        <h1 class="primary-text kinda-huge"><b>Zero Industries</b></h1>
+        <div class="col-2" id="offset"></div>
+        <img class="animated infinite pulse col-8" src="{% static 'display/img/logo.png' %}">
+        <h3 class="light col-12">Have the ride of your life!</h3>
+      </div>
+    </div>
+  </div>
+{% endblock %}

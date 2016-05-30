@@ -23,6 +23,12 @@ class display:
     def overview(request):
         return render(request, 'display/overview.html')
 
+    def attractions(request):
+        return render(request, 'display/attractions.html')
+
+    def finance(request):
+        return render(request, 'display/finance.html')
+
 def portal(request):
     return render(request, 'portal.html')
 

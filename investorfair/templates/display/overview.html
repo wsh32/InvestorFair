@@ -4,7 +4,7 @@
 {% block main %}
 
   <div id="impress">
-      <div id="title" class="step center" data-x="0" data-y="0" timeout="2000">
+      <div id="title" class="step center" data-x="0" data-y="0" timeout="5000">
         <div class="container">
           <h1 class="primary-text kinda-huge"><b>Zero Industries</b></h1>
           <div class="col-2" id="offset"></div>
@@ -13,22 +13,22 @@
         </div>
       </div>
 
-      <div id="mission" class="step" data-x="0" data-y="0" data-z="-500" timeout="5000">
+      <div id="mission" class="step" data-x="0" data-y="0" data-z="-500" timeout="20000">
         <blockquote>
           <div class="section">
-            <h5>"Here at ZERO, we provide the world with a lifetime experience of seamless travel. We encourage our guests of all ages to enjoy and explore the countless varieties of transit through our innovative attractions and interactive activities. We are highly dedicated to provide our guests the best customer service and educational experience of a lifetime."</h5>
+            <h5>"Here at ZERO, we provide the world with a lifetime experience of seamless travel. We encourage our guests of all ages to enjoy and explore the countless varieties of transit through our innovative attractions and interactive activities. We are highly dedicated to providing our guests the best customer service and educational experience of a lifetime."</h5>
           </div>
         </blockquote>
         <p class="light right">Our Mission</p>
       </div>
 
-      <div id="group" class="center step" data-x="0" data-y="0" data-z="-500" data-rotate-y="180" data-rotate-x="180" timeout="5000">
+      <div id="group" class="center step" data-x="0" data-y="0" data-z="-500" data-rotate-y="180" data-rotate-x="180" timeout="15000">
         <h2 class="primary-text"><b>The Team</b></h2>
         <img src="{% static 'display/img/group.png' %}">
         <h5>Zero Industries is a team of nine high school sophomores. Together, to provide a solution to the obnoxiously boring car ride between Los Angeles and Las Vegas, we designed a theme park based ironically on Transportation.</h5>
       </div>
 
-      <div id="park" class="step flex-align" data-x="0" data-y="0" data-z="500" data-rotate-y="180" data-rotate-x="180" timeout="2000">
+      <div id="park" class="step flex-align" data-x="0" data-y="0" data-z="500" data-rotate-y="180" data-rotate-x="180" timeout="15000">
         <div id="map" class="col-6">
           <img src="{% static 'display/img/park.png' %}">
         </div>
@@ -38,12 +38,7 @@
         </div>
       </div>
 
-      <div id="location" class="center step" data-x="0" data-y="0" data-z="500" data-rotate-x="90" timeout="2000">
-        <h2 class="primary-text"><b>Location</b></h2>
-
-      </div>
-
-      <div id="attractions" class="center step" data-x="0" data-y="0" data-z="0" data-rotate-y="90" timeout="2000">
+      <div id="attractions" class="center step" data-x="0" data-y="0" data-z="500" data-rotate-x="90" timeout="20000">
         <h2 class="primary-text"><b>Attractions</b></h2>
         <div class="col-6">
           <div class="card">
@@ -69,11 +64,8 @@
         </div>
       </div>
 
-      <div id="food" class="center step" data-x="0" data-y="0" data-rotate-y="180" data-rotate-x="180" timeout="2000">
-        <h2 class="primary-text"><b>Food Venues</b></h2>
-      </div>
-
-      <div id="finances" class="center step" data-x="0" data-y="0" data-z="-500" timeout="2000">
+      <div id="finances" class="center step" data-x="0" data-y="0" data-rotate-y="180" data-rotate-x="180" timeout="2000">
         <h2 class="primary-text"><b>Finances</b></h2>
       </div>
+    </div>
 {% endblock %}

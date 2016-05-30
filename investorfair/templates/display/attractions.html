@@ -1,0 +1,34 @@
+{% extends "display/base.html" %}
+{% load staticfiles %}
+
+{% block main %}
+
+  <div id="impress">
+    <div id="title" class="step center" data-x="0" data-y="0" timeout="5000">
+      <div class="container">
+        <h1 class="primary-text kinda-huge"><b>Zero Industries</b></h1>
+        <div class="col-2" id="offset"></div>
+        <img class="animated infinite pulse col-8" src="{% static 'display/img/logo.png' %}">
+        <h3 class="light col-12">Have the ride of your life!</h3>
+      </div>
+    </div>
+
+    <div id="overview" class="step flex-align" data-x="0" data-y="0" data-z="-500" timeout="10000">
+      <div id="map" class="col-6">
+        <img src="{% static 'display/img/park.png' %}">
+      </div>
+      <div id="text" class="col-6 center">
+        <h2 class="primary-text"><b>Overview</b></h2>
+        <h5>
+          <ul id="sections">
+            <li>Accelerating Aviation</li>
+            <li>Blast in the Past</li>
+            <li>Nautical Neighborhood</li>
+            <li>Space Sector</li>
+            <li>Wonder Wheels</li>
+          </ul>
+        </h5>
+      </div>
+    </div>
+  </div>
+{% endblock %}

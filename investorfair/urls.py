@@ -35,4 +35,6 @@ urlpatterns = [
 
     # Display
     url(r'^display/overview/$', views.display.overview),
+    url(r'^display/attractions/$', views.display.attractions),
+    url(r'^display/finance/$', views.display.finance),
 ]

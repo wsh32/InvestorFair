@@ -19,9 +19,9 @@ $(document).ready(function () {
 
 // probably not the best way but eh
 // comment out for debug
-// $('.step').on('impress:stepenter', function () {
-//   clearTimeout(action);
-// 	action = setTimeout(function() {
-// 	  api.next();
-// 	}, $(this).attr('timeout'));
-// });
+$('.step').on('impress:stepenter', function () {
+  clearTimeout(action);
+	action = setTimeout(function() {
+	  api.next();
+	}, $(this).attr('timeout'));
+});
