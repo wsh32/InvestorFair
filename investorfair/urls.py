@@ -16,6 +16,7 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
+from . import connect
 from . import views
 
 urlpatterns = [
@@ -37,4 +38,8 @@ urlpatterns = [
     url(r'^display/overview/$', views.display.overview),
     url(r'^display/attractions/$', views.display.attractions),
     url(r'^display/finance/$', views.display.finance),
+
+    url(r'^state/$', connect.get_state),
+    url(r'^set/$', connect.set_state),
+    url(r'^admin/$', views.admin),
 ]
