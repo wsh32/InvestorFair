@@ -88,6 +88,20 @@ class website:
             return darude(request)
 
 class display:
+    def cover(request):
+        if connect.state() == 0:
+    	    return render(request, 'display/cover.html')
+        elif connect.state() == 1:
+            return commerciale(request)
+        elif connect.state() == 2:
+            return blank(request)
+        elif connect.state() == 3:
+            return rickroll(request)
+        elif connect.state() == 4:
+            return justdoit(request)
+        elif connect.state() == 5:
+            return darude(request)
+
     def overview(request):
         if connect.state() == 0:
     	    return render(request, 'display/overview.html')
