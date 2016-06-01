@@ -10,6 +10,12 @@ class website:
             return commerciale(request)
         elif connect.state() == 2:
             return blank(request)
+        elif connect.state() == 3:
+            return rickroll(request)
+        elif connect.state() == 4:
+            return justdoit(request)
+        elif connect.state() == 5:
+            return darude(request)
 
     def attractions(request):
         if connect.state() == 0:
@@ -18,6 +24,12 @@ class website:
             return commerciale(request)
         elif connect.state() == 2:
             return blank(request)
+        elif connect.state() == 3:
+            return rickroll(request)
+        elif connect.state() == 4:
+            return justdoit(request)
+        elif connect.state() == 5:
+            return darude(request)
 
     def visit(request):
         if connect.state() == 0:
@@ -26,6 +38,12 @@ class website:
             return commerciale(request)
         elif connect.state() == 2:
             return blank(request)
+        elif connect.state() == 3:
+            return rickroll(request)
+        elif connect.state() == 4:
+            return justdoit(request)
+        elif connect.state() == 5:
+            return darude(request)
 
     def team(request):
         if connect.state() == 0:
@@ -34,6 +52,12 @@ class website:
             return commerciale(request)
         elif connect.state() == 2:
             return blank(request)
+        elif connect.state() == 3:
+            return rickroll(request)
+        elif connect.state() == 4:
+            return justdoit(request)
+        elif connect.state() == 5:
+            return darude(request)
 
     def faq(request):
         if connect.state() == 0:
@@ -42,6 +66,12 @@ class website:
             return commerciale(request)
         elif connect.state() == 2:
             return blank(request)
+        elif connect.state() == 3:
+            return rickroll(request)
+        elif connect.state() == 4:
+            return justdoit(request)
+        elif connect.state() == 5:
+            return darude(request)
 
     def resources(request):
         if connect.state() == 0:
@@ -50,6 +80,12 @@ class website:
             return commerciale(request)
         elif connect.state() == 2:
             return blank(request)
+        elif connect.state() == 3:
+            return rickroll(request)
+        elif connect.state() == 4:
+            return justdoit(request)
+        elif connect.state() == 5:
+            return darude(request)
 
 class display:
     def overview(request):
@@ -59,6 +95,12 @@ class display:
             return commerciale(request)
         elif connect.state() == 2:
             return blank(request)
+        elif connect.state() == 3:
+            return rickroll(request)
+        elif connect.state() == 4:
+            return justdoit(request)
+        elif connect.state() == 5:
+            return darude(request)
 
     def attractions(request):
         if connect.state() == 0:
@@ -67,6 +109,12 @@ class display:
             return commerciale(request)
         elif connect.state() == 2:
             return blank(request)
+        elif connect.state() == 3:
+            return rickroll(request)
+        elif connect.state() == 4:
+            return justdoit(request)
+        elif connect.state() == 5:
+            return darude(request)
 
     def finance(request):
         if connect.state() == 0:
@@ -75,6 +123,12 @@ class display:
             return commerciale(request)
         elif connect.state() == 2:
             return blank(request)
+        elif connect.state() == 3:
+            return rickroll(request)
+        elif connect.state() == 4:
+            return justdoit(request)
+        elif connect.state() == 5:
+            return darude(request)
 
 def commercial(request):
     if connect.state() == 0:
@@ -83,9 +137,26 @@ def commercial(request):
         return commerciale(request)
     elif connect.state() == 2:
         return blank(request)
+    elif connect.state() == 3:
+        return rickroll(request)
+    elif connect.state() == 4:
+        return justdoit(request)
+    elif connect.state() == 5:
+        return darude(request)
 
 def portal(request):
-    return render(request, 'portal.html')
+    if connect.state() == 0:
+        return render(request, 'portal.html')
+    elif connect.state() == 1:
+        return commerciale(request)
+    elif connect.state() == 2:
+        return blank(request)
+    elif connect.state() == 3:
+        return rickroll(request)
+    elif connect.state() == 4:
+        return justdoit(request)
+    elif connect.state() == 5:
+        return darude(request)
 
 def admin(request):
     return render(request, 'admin.html')
@@ -95,3 +166,12 @@ def commerciale(request):
 
 def blank(request):
     return render(request, 'blank.html')
+
+def rickroll(request):
+    return render(request, 'rickroll.html')
+
+def justdoit(request):
+    return render(request, 'justdoit.html')
+
+def darude(request):
+    return render(request, 'darude.html')

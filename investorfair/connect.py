@@ -2,13 +2,16 @@ import json
 from django.http import HttpResponse
 
 class connect:
-    states = [0,1,2]
+    states = [0,1,2,3,4,5]
     state = 0
 
     '''
     State 0: Normal
     State 1: Commercial
     State 2: Blank
+    State 3: Rickroll
+    State 4: JUST DO IT
+    State 5: Darude
     '''
 
 def state():

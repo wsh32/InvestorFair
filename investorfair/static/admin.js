@@ -39,3 +39,15 @@ function commercial() {
 function blank() {
   go(2);
 }
+
+function rickroll() {
+  go(3);
+}
+
+function justdoit() {
+  go(4);
+}
+
+function darude() {
+  go(5);
+}
